@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Birthday</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        overflow: hidden;
+    }
+
+    .box {
+        text-align: center;
+        padding: 40px 60px;
+        border: 2px solid rgba(255,255,255,0.3);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: normal;
+        opacity: 0.9;
+    }
+
+    .age {
+        margin-top: 20px;
+        font-size: 60px;
+        font-weight: bold;
+        color: #00e6ff;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%,100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>AJ MERA JANAM DIN HA</h1>
+    <h2>TAYYAB</h2>
+    <div class="age">20</div>
+</div>
+
+</body>
+</html>
